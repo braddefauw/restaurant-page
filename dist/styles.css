@@ -46,6 +46,7 @@ header ul li {
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about p {
@@ -61,4 +62,26 @@ header ul li {
 
 #th-img {
     border-radius: 50%;
+}
+
+footer, footer h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: rgba(74,85,110, 0.95);
+    width: 100%;
+    margin: 0.1rem 0.1rem 0 0.1rem;
+}
+
+footer img {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+    transition: transform 0.5s ease-in-out;
+    filter: invert(37%) sepia(18%) saturate(2097%) hue-rotate(316deg) brightness(98%) contrast(95%);
+}
+
+footer img:hover {
+    transform: rotate(360deg) scale(1.5);
 }
