@@ -5,6 +5,40 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: #c1473e;
+    font-family: 'Italiana', serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(74,85,110, 0.75);
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.about {
+    margin-top: 2rem;
+    width: 50%;
 }
 
 #th-img {
