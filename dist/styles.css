@@ -18,12 +18,14 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    background-color: rgba(74,85,110, 0.75);
+    background-color: rgba(74,85,110, 0.95);
     width: 100%;
 }
 
 header h1 {
     text-align: center;
+    font-size: 3.25rem;
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 header ul {
@@ -34,11 +36,27 @@ header ul {
 header ul li {
     list-style-type: none;
     margin-right: 2rem;
+    font-size: 1.5rem;
 }
 
 .about {
     margin-top: 2rem;
     width: 50%;
+    background-color: rgba(74,85,110, 0.95);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #th-img {
