@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,12 +11,16 @@ body {
     background-size: cover;
     color: #c1473e;
     font-family: 'Italiana', serif;
+    display: flex;
+    flex-direction: column;
 }
 
 #content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex: 1 0 auto;
 }
 
 header {
@@ -44,6 +52,8 @@ header ul li {
     width: 50%;
     background-color: rgba(74,85,110, 0.95);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 2rem;
     margin-bottom: 1rem;
@@ -71,8 +81,15 @@ footer, footer h5 {
     flex-shrink: 0;
     background-color: rgba(74,85,110, 0.95);
     width: 100%;
-    margin: 0.1rem 0.1rem 0 0.1rem;
+    margin: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
 }
+
+footer span {
+    padding: 0.25rem;
+    margin-top: 0.1rem;
+} 
 
 footer img {
     height: 1.5rem;
@@ -83,5 +100,5 @@ footer img {
 }
 
 footer img:hover {
-    transform: rotate(360deg) scale(1.5);
+    transform: rotate(360deg) scale(1.25);
 }
