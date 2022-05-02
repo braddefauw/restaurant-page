@@ -35,6 +35,14 @@ const pageLoad = () => {
     imgDiv.appendChild(img);
     about.appendChild(imgDiv);
     document.body.appendChild(content);
+
+    //footer
+    let footer = document.createElement("footer");
+    footer.classList.add("footer");
+    let footerText = document.createElement("h5");
+    footerText.innerHTML = `Copyright <span>©</span> 2022 braddefauw <a href="https://github.com/braddefauw/tic-tac-toe"><img src="img/icons8-github.svg" /></a>`;
+    footer.appendChild(footerText);
+    document.body.appendChild(footer);
 }
 
 export { pageLoad };
