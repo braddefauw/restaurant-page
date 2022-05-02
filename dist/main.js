@@ -1,1 +1,1 @@
-console.log("test");
+(()=>{"use strict";(()=>{let e=document.createElement("header"),t=document.createElement("h1");t.innerText="Tom's Bistro",e.appendChild(t);let n=document.createElement("ul"),d=document.createElement("li");d.innerText="Home",n.appendChild(d);let l=document.createElement("li");l.innerText="Menu",n.appendChild(l);let c=document.createElement("li");c.innerText="Contact",n.appendChild(c),document.body.appendChild(e),e.appendChild(n)})()})();
