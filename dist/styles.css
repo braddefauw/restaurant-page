@@ -29,6 +29,8 @@ body {
 
 #menu-content {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: minmax(min-content, 300px);
     height: 100%;
 }

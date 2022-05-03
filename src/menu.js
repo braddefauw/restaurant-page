@@ -9,12 +9,12 @@ const menu = () => {
     //content
     let content = document.createElement("div");
     content.setAttribute('id', 'menu-content');
-    let cavDiv = document.createElement("div");
-    let cavImg = document.createElement("img");
-    cavImg.setAttribute('src', '/dist/img/cavatelli.jpeg');
-    cavImg.classList.add("menu-image");
-    cavDiv.appendChild(cavImg);
-    content.appendChild(cavDiv);
+    let about = document.createElement('div');
+    about.classList.add("about");
+    content.appendChild(about);
+    let aboutText = document.createElement("p");
+    aboutText.innerText = "This is where the menu info would go."
+    about.appendChild(aboutText);
     main.appendChild(content);
 }
 
