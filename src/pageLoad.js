@@ -6,13 +6,16 @@ const pageLoad = () => {
     header.appendChild(title);
     let ul = document.createElement("ul");
     let li1 = document.createElement("li");
+    li1.classList.add("home");
     li1.innerText = "Home";
     ul.appendChild(li1);
     let li2 = document.createElement("li");
     li2.innerText = "Menu";
+    li2.classList.add("menu");
     ul.appendChild(li2);
     let li3 = document.createElement("li");
-    li3.innerText = "Menu";
+    li3.innerText = "Contact";
+    li3.classList.add("contact");
     ul.appendChild(li3);
     header.appendChild(ul);
     document.body.appendChild(header);
