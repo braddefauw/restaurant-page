@@ -11,11 +11,14 @@ body {
     background-size: cover;
     color: #c1473e;
     font-family: 'Italiana', serif;
+}
+
+#content {
     display: flex;
     flex-direction: column;
 }
 
-#content {
+#content-mid {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,4 +1,6 @@
 const pageLoad = () => {
+    let main = document.getElementById("content");
+    
     //header
     let header = document.createElement("header");
     let title = document.createElement("h1");
@@ -18,11 +20,11 @@ const pageLoad = () => {
     li3.classList.add("contact");
     ul.appendChild(li3);
     header.appendChild(ul);
-    document.body.appendChild(header);
+    main.appendChild(header);
 
     //content
     let content = document.createElement("div");
-    content.setAttribute('id', 'content');
+    content.setAttribute('id', 'content-mid');
     let about = document.createElement('div');
     about.classList.add("about");
     content.appendChild(about);
@@ -37,7 +39,7 @@ const pageLoad = () => {
     img.setAttribute('id', 'th-img');
     imgDiv.appendChild(img);
     about.appendChild(imgDiv);
-    document.body.appendChild(content);
+    main.appendChild(content);
 
     //footer
     let footer = document.createElement("footer");
@@ -45,7 +47,7 @@ const pageLoad = () => {
     let footerText = document.createElement("h5");
     footerText.innerHTML = `Copyright <span>©</span> 2022 braddefauw <a href="https://github.com/braddefauw/tic-tac-toe"><img src="img/icons8-github.svg" /></a>`;
     footer.appendChild(footerText);
-    document.body.appendChild(footer);
+    main.appendChild(footer);
 }
 
 export { pageLoad };

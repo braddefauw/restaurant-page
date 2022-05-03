@@ -5,6 +5,8 @@ import { contact } from './contact'
 pageLoad();
 let menuBtn = document.querySelector(".menu");
 menuBtn.addEventListener('click', function(){
+    let content = document.querySelector("#content");
+    content.remove();
     menu();
 })
 let contactBtn = document.querySelector(".contact");

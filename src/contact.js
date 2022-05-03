@@ -12,14 +12,14 @@ const contact = () => {
     li2.innerText = "Menu";
     ul.appendChild(li2);
     let li3 = document.createElement("li");
-    li3.innerText = "Menu";
+    li3.innerText = "Contact";
     ul.appendChild(li3);
     header.appendChild(ul);
     document.body.appendChild(header);
 
     //content
     let content = document.createElement("div");
-    content.setAttribute('id', 'content');
+    content.setAttribute('id', 'content-mid');
     let about = document.createElement('div');
     about.classList.add("about");
     content.appendChild(about);
