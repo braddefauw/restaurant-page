@@ -27,6 +27,17 @@ body {
     flex: 1 0 auto;
 }
 
+#menu-content {
+    display: grid;
+    grid-template-columns: minmax(min-content, 300px);
+    height: 100%;
+}
+
+.menu-image {
+    height: 200px;
+    width: 200px;
+}
+
 header {
     display: flex;
     flex-direction: column;
