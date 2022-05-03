@@ -1,4 +1,8 @@
 const contact = () => {
+    let main = document.createElement("div");
+    main.setAttribute('id', 'content');
+    document.body.appendChild(main);
+    
     //header
     let header = document.createElement("header");
     let title = document.createElement("h1");
@@ -15,7 +19,7 @@ const contact = () => {
     li3.innerText = "Contact";
     ul.appendChild(li3);
     header.appendChild(ul);
-    document.body.appendChild(header);
+    main.appendChild(header);
 
     //content
     let content = document.createElement("div");
@@ -26,7 +30,7 @@ const contact = () => {
     let aboutText = document.createElement("p");
     aboutText.innerText = "This is where the contact info would go."
     about.appendChild(aboutText);
-    document.body.appendChild(content);
+    main.appendChild(content);
 
     //footer
     let footer = document.createElement("footer");
@@ -34,7 +38,7 @@ const contact = () => {
     let footerText = document.createElement("h5");
     footerText.innerHTML = `Copyright <span>©</span> 2022 braddefauw <a href="https://github.com/braddefauw/tic-tac-toe"><img src="img/icons8-github.svg" /></a>`;
     footer.appendChild(footerText);
-    document.body.appendChild(footer);
+    main.appendChild(footer);
 }
 
 export { contact };
