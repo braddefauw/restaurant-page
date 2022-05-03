@@ -33,6 +33,12 @@ body {
     height: 100%;
 }
 
+#contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .menu-image {
     height: 200px;
     width: 200px;

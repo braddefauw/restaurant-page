@@ -1,4 +1,4 @@
-const contact = () => {
+const home = () => {
     let main = document.createElement("div");
     main.setAttribute('id', 'content-mid');
     let footer = document.querySelector(".footer")
@@ -8,14 +8,22 @@ const contact = () => {
 
     //content
     let content = document.createElement("div");
-    content.setAttribute('id', 'contact-content');
+    content.setAttribute('id', 'content-mid');
     let about = document.createElement('div');
     about.classList.add("about");
     content.appendChild(about);
     let aboutText = document.createElement("p");
-    aboutText.innerText = "This is where the contact info would go."
+    aboutText.innerText = "An old-fashioned, old-world Italian restaurant with a classy, authentic, ambiance in a small town setting. Founded by Tom Haverford."
     about.appendChild(aboutText);
+    let imgDiv = document.createElement("div");
+    imgDiv.classList.add("img-div");
+    let img = document.createElement("img");
+    img.setAttribute('src', '/dist/img/th.jpeg');
+    img.setAttribute('alt', 'Restaurant Image');
+    img.setAttribute('id', 'th-img');
+    imgDiv.appendChild(img);
+    about.appendChild(imgDiv);
     main.appendChild(content);
 }
 
-export { contact };
+export { home };

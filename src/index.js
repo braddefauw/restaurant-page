@@ -1,6 +1,7 @@
 import { pageLoad } from './pageLoad'
 import { menu } from './menu'
 import { contact } from './contact'
+import { home } from './home'
 
 pageLoad();
 
@@ -23,5 +24,5 @@ homeBtn.addEventListener('click', function() {
     let content = document.querySelector("#content-mid");
     console.log(content);
     content.remove();
-    pageLoad();
+    home();
 })
