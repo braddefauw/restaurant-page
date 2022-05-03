@@ -3,6 +3,7 @@ const pageLoad = () => {
     
     //header
     let header = document.createElement("header");
+    header.classList.add("header");
     let title = document.createElement("h1");
     title.innerText = "Tom's Bistro";
     header.appendChild(title);
