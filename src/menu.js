@@ -55,6 +55,21 @@ const menu = () => {
         "Broccoli sauteed in garlic and olive oil, served over homemade linguini.", 
         "$14.95")
     );
+    menu.appendChild(
+        item("Rigatoni with Fresh Mozzarella", 
+        "Fresh mozzarella topping with fresh basil in tomato-basil sauce.", 
+        "$17.95")
+    );
+    menu.appendChild(
+        item("Baked Cavatelli", 
+        "Served with Romano, parmigiana, ricotta and mozzarella cheeses in marinara.", 
+        "$16.95")
+    );
+    menu.appendChild(
+        item("Lasagna", 
+        "Meat lasagna made with imported cheeses, fresh ricotta.", 
+        "$16.95")
+    );
     main.appendChild(menu);
     item();
 }
