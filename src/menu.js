@@ -2,7 +2,7 @@ const menu = () => {
     let main = document.createElement("div");
     main.setAttribute('id', 'content');
     document.body.appendChild(main);
-    
+
     //header
     let header = document.createElement("header");
     let title = document.createElement("h1");
@@ -18,6 +18,9 @@ const menu = () => {
     let li3 = document.createElement("li");
     li3.innerText = "Contact";
     ul.appendChild(li3);
+    li1.classList.add("home");
+    li2.classList.add("menu");
+    li3.classList.add("contact");
     header.appendChild(ul);
     main.appendChild(header);
 

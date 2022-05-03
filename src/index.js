@@ -20,5 +20,3 @@ homeBtn.addEventListener('click', function() {
     content.remove();
     pageLoad();
 })
-// menu();
-// contact();
