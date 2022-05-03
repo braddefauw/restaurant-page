@@ -36,24 +36,24 @@ const menu = () => {
         "$16.95")
     );
     menu.appendChild(
-        item("8 Finger Cavatelli", 
-        "Served in savory vodka sauce.", 
+        item("Rossa e Bianco Red and White", 
+        "Homemade fettuccini Alfredo with 2 meatballs, covered in meat sauce.", 
         "$16.95")
     );
     menu.appendChild(
-        item("8 Finger Cavatelli", 
-        "Served in savory vodka sauce.", 
-        "$16.95")
+        item("Rigatoni All'abruzzese", 
+        "Served with sliced Italian sausage and ricotta topping in marinara sauce.", 
+        "$17.95")
     );
     menu.appendChild(
-        item("8 Finger Cavatelli", 
-        "Served in savory vodka sauce.", 
-        "$16.95")
+        item("Special Cavatelli", 
+        "Served with garlic and olive oil sauteed string beans, roasted red peppers and mushrooms.", 
+        "$17.95")
     );
     menu.appendChild(
-        item("8 Finger Cavatelli", 
-        "Served in savory vodka sauce.", 
-        "$16.95")
+        item("Linguini Broccoli", 
+        "Broccoli sauteed in garlic and olive oil, served over homemade linguini.", 
+        "$14.95")
     );
     main.appendChild(menu);
     item();
