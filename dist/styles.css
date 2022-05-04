@@ -50,15 +50,6 @@ body {
     text-align: center;
 }
 
-#contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(74,85,110, 0.95);
-    height: 75%;
-    width: 50%;
-}
-
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -71,10 +62,11 @@ body {
 .contact-info {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .restaurant-image {
-    height: 16rem;
+    height: 75%;
     width: 100%;
 }
 
@@ -112,7 +104,7 @@ header li:hover {
     text-decoration: underline;
 }
 
-.about{
+.about, #contact-content {
     width: 50%;
     background-color: rgba(74,85,110, 0.95);
     display: flex;
