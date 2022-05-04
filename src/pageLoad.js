@@ -35,7 +35,7 @@ const pageLoad = () => {
     let imgDiv = document.createElement("div");
     imgDiv.classList.add("img-div");
     let img = document.createElement("img");
-    img.setAttribute('src', '/dist/img/th.jpeg');
+    img.setAttribute('src', '../dist/img/th.jpeg');
     img.setAttribute('alt', 'Restaurant Image');
     img.setAttribute('id', 'th-img');
     imgDiv.appendChild(img);

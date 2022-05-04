@@ -23,7 +23,7 @@ const contact = () => {
 
     let restauantImg = document.createElement("img");
     restauantImg.classList.add("restaurant-image")
-    restauantImg.src = '/dist/img/toms-bistro.webp';
+    restauantImg.src = '../dist/img/toms-bistro.webp';
     content.appendChild(restauantImg);
 
     main.appendChild(content);
