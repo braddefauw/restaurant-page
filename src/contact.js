@@ -9,12 +9,25 @@ const contact = () => {
     //content
     let content = document.createElement("div");
     content.setAttribute('id', 'contact-content');
-    let about = document.createElement('div');
-    about.classList.add("about");
-    content.appendChild(about);
-    let aboutText = document.createElement("p");
-    aboutText.innerText = "This is where the contact info would go."
-    about.appendChild(aboutText);
+    let contactContainer = document.createElement('div');
+    contactContainer.classList.add("contact-container");
+    content.appendChild(contactContainer);
+    
+    let phoneDiv = document.createElement("div");
+    phoneDiv.innerHTML = `Phone number`;
+    phoneDiv.classList.add("contact-info");
+    contactContainer.appendChild(phoneDiv);
+
+    let addressDiv = document.createElement("div");
+    addressDiv.innerHTML = `Address`;
+    addressDiv.classList.add("contact-info");
+    contactContainer.appendChild(addressDiv);
+
+    let restauantImg = document.createElement("img");
+    restauantImg.classList.add("restaurant-image")
+    restauantImg.src = '/dist/img/toms-bistro.webp';
+    contactContainer.appendChild(restauantImg);
+
     main.appendChild(content);
 }
 
