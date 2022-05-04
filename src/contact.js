@@ -9,24 +9,22 @@ const contact = () => {
     //content
     let content = document.createElement("div");
     content.setAttribute('id', 'contact-content');
-    let contactContainer = document.createElement('div');
-    contactContainer.classList.add("contact-container");
-    content.appendChild(contactContainer);
+    main.appendChild(content);
     
     let phoneDiv = document.createElement("div");
-    phoneDiv.innerHTML = `Phone number`;
+    phoneDiv.innerHTML = `Phone number: 867-5309`;
     phoneDiv.classList.add("contact-info");
-    contactContainer.appendChild(phoneDiv);
+    content.appendChild(phoneDiv);
 
     let addressDiv = document.createElement("div");
-    addressDiv.innerHTML = `Address`;
+    addressDiv.innerHTML = `Address: 123 Main Street, Pawnee, Indiana`;
     addressDiv.classList.add("contact-info");
-    contactContainer.appendChild(addressDiv);
+    content.appendChild(addressDiv);
 
     let restauantImg = document.createElement("img");
     restauantImg.classList.add("restaurant-image")
     restauantImg.src = '/dist/img/toms-bistro.webp';
-    contactContainer.appendChild(restauantImg);
+    content.appendChild(restauantImg);
 
     main.appendChild(content);
 }

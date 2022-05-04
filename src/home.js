@@ -7,11 +7,9 @@ const home = () => {
     contentNode.insertBefore(main, footer);
 
     //content
-    let content = document.createElement("div");
-    content.setAttribute('id', 'content-mid');
     let about = document.createElement('div');
     about.classList.add("about");
-    content.appendChild(about);
+    main.appendChild(about);
     let aboutText = document.createElement("p");
     aboutText.innerText = "An old-fashioned, old-world Italian restaurant with a classy, authentic, ambiance in a small town setting. Founded by Tom Haverford."
     about.appendChild(aboutText);
@@ -23,7 +21,6 @@ const home = () => {
     img.setAttribute('id', 'th-img');
     imgDiv.appendChild(img);
     about.appendChild(imgDiv);
-    main.appendChild(content);
 }
 
 export { home };
