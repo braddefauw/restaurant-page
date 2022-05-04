@@ -50,15 +50,6 @@ body {
     text-align: center;
 }
 
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
-    margin: 1rem;
-}
-
 .contact-info {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -113,6 +104,11 @@ header li:hover {
     flex-direction: column;
     padding: 2rem;
     margin: 4rem 0rem 4rem 0rem;
+}
+
+#contact-content {
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .about p {
